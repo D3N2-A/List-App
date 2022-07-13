@@ -53,7 +53,7 @@ function App() {
         {people.map((person) => {
           const { id, firstName, email } = person;
           return (
-            <div className="item">
+            <div className="item" key={id}>
               <h4>{firstName}</h4>
               <p>{email}</p>
             </div>
